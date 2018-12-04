@@ -3,7 +3,7 @@
 /*
 	Final Project
 	La La Land
-	
+
 	Author: Khaya
 	Date: 4/23/2017
 
@@ -31,7 +31,7 @@ header > img {
 nav.horizontal ul {
 	display: flex;
 	flex-flow: row wrap;
-	
+
 	border-style: double none;
 	border-color: #e34858;
 	border-width: 4px;
@@ -44,7 +44,7 @@ nav.horizontal li {
 }
 
 nav > ul > li > a {
-	text-decoration: none; 
+	text-decoration: none;
 	color: #e35b4f;
 	font-family: Impact, Charcoal, sans-serif;
 	letter-spacing: 0.2em;
@@ -55,7 +55,7 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover, nav > ul > li > a:active {
-	text-decoration: none; 
+	text-decoration: none;
 	color: rgba(255,255,255, 0.5);
 	text-shadow: #e35b4f -5px 2px 15px;
 	font-family: Impact, Charcoal, sans-serif;
@@ -69,7 +69,7 @@ section article {
 	font-size: 0.9em;
 	line-height: 1.5em;
 	padding: 2em 1.5em;
-} 
+}
 
 footer {
 	font-size: 0.8em;
@@ -97,13 +97,13 @@ footer dt {
 footer dd {
 	line-height: 1.7em;
 }
-	
+
 footer::after
 	{clear: both;
 	content: "";
 	display: table;}
 
-	
+
 /* Homepage Styles */
 
 section.home img {
@@ -114,12 +114,12 @@ section.home img {
 section.home > article {
 	margin: 0px auto 7em auto;
 	padding: 2em 3em;
-} 
+}
 
 section.home figure {
 	border-width: 0px 170px 0px 170px;
 	border-style: solid;
-	border-image: url(img_css/la_frame.png) 82;
+	border-image: url(imgs/la_frame.png) 82;
 }
 
 @keyframes slide {
@@ -131,7 +131,7 @@ section.home figure {
 	0% {top: 140px;}
 	100% {top: 340px;}
 }
-	
+
 @keyframes scroll {
 	0% {top: 70px;}
 	100% {top: 270px;}
@@ -197,9 +197,9 @@ section.bio {
 	flex-flow: row wrap;
 }
 
-section.bio img { 
+section.bio img {
 	height: 300px;
-	width: 40%;	
+	width: 40%;
 }
 
 section.bio ul {
@@ -237,7 +237,7 @@ section.album img {
 	display: block;
 	margin: 1.5em auto;
 	transform: rotate(10deg) scale(0.9, 0.9) translateY(20px)
-	rotateY(-35deg) translateZ(-20px); 
+	rotateY(-35deg) translateZ(-20px);
 	box-shadow: rgb(51, 51, 51) 10px -10px 25px;
 }
 
@@ -255,17 +255,17 @@ section.album strong.title {
 
 section.album ul li#spark {
 	padding-top: 2em;
-	list-style-image: url(img_css/album2_icon.png);
+	list-style-image: url(imgs/album2_icon.png);
 	list-style-position: inside;
 }
 
 section.album ul li#color {
 	padding-top: 3.5em;
-	list-style-image: url(img_css/album1_icon.png);
+	list-style-image: url(imgs/album1_icon.png);
 	list-style-position: inside;
 }
 
-section.album ul li.none	
+section.album ul li.none
 	{list-style-image: none;
 	list-style-type: none;
 	font-family: 'Century Gothic';
@@ -318,7 +318,7 @@ section#tour article {
 section#tour figure {
 	border-width: 0px 170px 0px 170px;
 	border-style: solid;
-	border-image: url(img_css/la_frame.png) 82;
+	border-image: url(imgs/la_frame.png) 82;
 }
 
 table {
@@ -383,11 +383,11 @@ h1 {
 form {
    display: flex;
    flex-flow: row wrap;
-} 
+}
 
 fieldset {
-   flex: 1 1 300px; 
-   margin: 10px;  
+   flex: 1 1 300px;
+   margin: 10px;
 }
 
 div {
@@ -434,4 +434,4 @@ input[type="submit"] {
 
 section#form article {
 	margin: 3em auto 4em auto;
-} 
+}
