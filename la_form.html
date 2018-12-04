@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+	Final Project
+	La La Land Subscribe page
+	Khaya
+	4/23/2017
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="La La Land, music band" />	
+	<title>LA LA LAND Join</title>
+	<link href="la_designs.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<img src="img_css/la_header.png" alt="La La Land" />
+		<nav class="horizontal">
+			<ul>
+				<li><a href="la_home.html">Home</a></li>
+				<li><a href="la_bio.html">Bio</a></li>
+				<li><a href="la_album.html">Album</a></li>
+				<li><a href="la_tour.html">Tour</a></li>
+				<li><a href="la_form.html">Subscribe</a></li>
+			</ul>
+		</nav>
+	</header>	
+	<section id="form">
+		<article>
+			<h1>Join Our Community</h1>
+			<form name="signup" id="signup"	action="mailto:yahyal0v3@yahoo.com" method="post">
+				<fieldset class="top">
+					<legend>Login Info</legend>
+					<label for="email">E-Mail Address*</label>
+					<input type="text" name="email" id="email" required />
+					<label for="user">Username*</label>
+					<input type="text" name="uname" id="user" pattern=".{3,}" required />
+					<label for="code">Password*</label>
+					<input type="text" name="code" id="code" pattern=".{6,}"
+					placeholder="at least 6 characters long" required />
+					<label for="code2">Confirm Password*</label>
+					<input type="text" name="code2" id="code2" pattern=".{6,}"
+					placeholder="at least 6 characters long" required />
+				</fieldset>
+				
+				<fieldset class="top">
+					<legend>User Info</legend>
+					<label for="first">First Name</label>
+					<input type="text" name="first" id="first" />
+					<label for="last">Last Name</label>
+					<input type="text" name="last" id="last" />
+					<label for="bdate">Date of Birth*</label>
+					<input type="date" name="bdate" id="bdate" required />
+					<label for="zip">Zip Code*</label>
+					<input type="text" name="age" id="zip" pattern="^\d{5}(-\d{4})?$" 
+					required />
+				</fieldset>
+
+					<label>Where did you hear about us?</label>
+					<fieldset>
+						<input type="radio" name="source" id="youtube" value="youtube" />
+						<label for="youtube">YouTube</label>
+						<input type="radio" name="source" id="media" value="media" checked />
+						<label for="media">Social Media</label>
+						<input type="radio" name="source" id="pod" value="pod" />
+						<label for="pod">Podcast</label>
+						<input type="radio" name="source" id="itunes" value="itunes" />
+						<label for="itunes">iTunes</label>
+						<input type="radio" name="source" id="friend" value="friend" />
+						<label for="friend">A Friend</label>
+						<input type="radio" name="source" id="other" value="other" />
+						<label for="other">Other</label>
+					</fieldset>
+					
+					<label for="socialMed">Do you follow up on social media? If so, on which sites?
+					(Select all that apply.) </label>
+					<select name="sm" id="socialMed" size="3" multiple>
+						<option value="none">None</option>
+						<option value="fb">Facebook</option>	
+						<option value="twitter" selected="selected">Twitter</option>
+						<option value="yt">YouTube</option>
+						<option value="instagram">Instagram</option>
+					</select>
+
+					<label>Subscribe to our Mailing Lists</label>
+					<fieldset>
+						<input type="checkbox" name="subscribe" id="lalaland" value="lalaland" 
+						checked />
+						<label for="lalaland">La La Land</label>
+						<input type="checkbox" name="subscribe" id="universal" value="universal" />
+						<label for="universal">Universal Music Group</label>
+						<input type="checkbox" name="subscribe" id="interscope" value="interscope" />
+						<label for="interscope">Interscope Records</label>
+					</fieldset>
+				
+				<div>
+					<input value="Subscribe" type="submit">
+				</div>
+			</form>
+		</article>
+	</section>
+
+	<footer>
+		<div class="footer">
+		  <dl>
+			 <dt>Publication Date</dt>
+			 <dd>4/23/2017</dd>
+		  </dl>
+		  <dl>
+			 <dt>Webmaster</dt>
+			 <dd>Khaya &#8226; (201) 838-2544</dd>
+		  </dl>
+		  <dl>
+			 <dt>Copyright Audio</dt>
+			 <dd>Audio courtesy of looperman.com</dd>
+			 <dd>Jennifer's audio &#8226; Stop Talking by Abigailia</dd>
+			 <dd>Nana's audio &#8226; Thoughts by DesignedImpression</dd>
+			 <dd>Holly's audio &#8226; Hard RockFunky by Laurentwirz</dd>
+		  </dl>
+		  <dl>
+			 <dt>Copyright Images</dt>
+			 <dd>All images courtesy of pixabay.com</dd>
+		  </dl>
+		</div>
+	</footer>
+</body>
+
+</html>

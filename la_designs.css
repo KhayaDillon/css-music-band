@@ -1,0 +1,437 @@
+@charset "utf-8";
+
+/*
+	Final Project
+	La La Land
+	
+	Author: Khaya
+	Date: 4/23/2017
+
+	Filename: la_design.css
+*/
+
+/* Shared Styles */
+
+html {
+	background: linear-gradient(to left bottom, #668282, #9ab8b8, white);
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+header, section {
+	margin: 0px auto 0px auto;
+	min-width: 320px;
+	max-width: 800px;
+	width: 100%;
+}
+
+header > img {
+	width: 100%;
+}
+
+nav.horizontal ul {
+	display: flex;
+	flex-flow: row wrap;
+	
+	border-style: double none;
+	border-color: #e34858;
+	border-width: 4px;
+}
+
+nav.horizontal li {
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 1 auto;
+}
+
+nav > ul > li > a {
+	text-decoration: none; 
+	color: #e35b4f;
+	font-family: Impact, Charcoal, sans-serif;
+	letter-spacing: 0.2em;
+	font-size: 1.2em;
+	transition: color 1.5s ease-in,
+				font-size 2s ease,
+				letter-spacing 2s ease-out;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	text-decoration: none; 
+	color: rgba(255,255,255, 0.5);
+	text-shadow: #e35b4f -5px 2px 15px;
+	font-family: Impact, Charcoal, sans-serif;
+	letter-spacing: 0.2em;
+	font-size: 2.7em;
+}
+
+section article {
+	background: rgba(255,255,255, 0.3);
+	box-shadow: #e35b4f 5px 2px 15px, rgb(51, 51, 51) 5px 0px 15px;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	padding: 2em 1.5em;
+} 
+
+footer {
+	font-size: 0.8em;
+	color: #578e8e;
+	background-color: rgba(255,255,255, 0.7);
+	clear: both;
+	width: 100%;
+}
+
+footer dl
+	{float: left;
+	width: 24%;
+	text-align: left;
+}
+
+div.footer {
+	margin: 1em 0em 2em 3.6em;
+}
+
+footer dt {
+	font-weight: bold;
+	padding-left: 2.5em;
+}
+
+footer dd {
+	line-height: 1.7em;
+}
+	
+footer::after
+	{clear: both;
+	content: "";
+	display: table;}
+
+	
+/* Homepage Styles */
+
+section.home img {
+	width: 100%;
+	display: block;
+}
+
+section.home > article {
+	margin: 0px auto 7em auto;
+	padding: 2em 3em;
+} 
+
+section.home figure {
+	border-width: 0px 170px 0px 170px;
+	border-style: solid;
+	border-image: url(img_css/la_frame.png) 82;
+}
+
+@keyframes slide {
+	0% {top: -30px;}
+	100% {top: 230px;}
+}
+
+@keyframes flight {
+	0% {top: 140px;}
+	100% {top: 340px;}
+}
+	
+@keyframes scroll {
+	0% {top: 70px;}
+	100% {top: 270px;}
+}
+
+@keyframes rainbow {
+	0% {color: rgba(227,91,79, 0.01);}
+	30% {color: rgba(227,91,79, 0.99);}
+	100% {color: rgba(227,91,79, 0.01);}
+}
+
+div.fall {
+	float: left;
+	display: flex;
+	flex-flow: row wrap;
+	position: absolute;
+}
+
+div.star1 {
+	width: 3%;
+	position: relative;
+	font-size: 1.6em;
+	animation-name: rainbow, slide;
+	animation-duration: 10s, 10s;
+	animation-timing-function: ease-in, linear;
+	animation-iteration-count: infinite, infinite;
+	flex: 1 1 auto;
+}
+
+div.star2 {
+	width: 10%;
+	position: relative;
+	font-size: 1.6em;
+	animation-name: rainbow, flight;
+	animation-duration: 10s, 10s;
+	animation-timing-function: ease-in, linear;
+	animation-iteration-count: infinite, infinite;
+	flex: 1 1 auto;
+}
+
+div.star3 {
+	width: 3%;
+	position: relative;
+	font-size: 1.4em;
+	animation-name: rainbow, scroll;
+	animation-duration: 10s, 10s;
+	animation-timing-function: ease-in, linear;
+	animation-iteration-count: infinite, infinite;
+	flex: 1 1 auto;
+}
+
+
+
+/* Bio Styles */
+
+h1#bio {
+	margin: 1.5em auto;
+	text-align: center;
+}
+
+section.bio {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+section.bio img { 
+	height: 300px;
+	width: 40%;	
+}
+
+section.bio ul {
+	font-weight: bold;
+	color: #cbdbdb;
+	text-shadow: black 5px 0px 15px;
+	line-height: 2em;
+}
+
+section.bio div {
+	margin: 3em 1em;
+	flex: 1 1 150px;
+}
+
+section.bio audio {
+	margin: 2em 0em 0em 4em;
+	box-shadow: rgba(51, 51, 51, 0.5) 8px 8px 15px;
+	width: 50%;
+}
+
+section.bio article {
+	flex: 3 1 300px;
+	margin: 0px auto 2em auto;
+}
+
+section#last article {
+	margin-bottom: 7em;
+}
+
+
+/* Album Styles */
+
+section.album img {
+	width: 60%;
+	display: block;
+	margin: 1.5em auto;
+	transform: rotate(10deg) scale(0.9, 0.9) translateY(20px)
+	rotateY(-35deg) translateZ(-20px); 
+	box-shadow: rgb(51, 51, 51) 10px -10px 25px;
+}
+
+section.album article {
+	margin: 0px auto 7em auto;
+	columns: 150px 2;
+	column-rule: 1px solid #578e8e;
+	line-height: 1.8em;
+}
+
+section.album strong.title {
+	color: white;
+	font-size: 1.7em;
+}
+
+section.album ul li#spark {
+	padding-top: 2em;
+	list-style-image: url(img_css/album2_icon.png);
+	list-style-position: inside;
+}
+
+section.album ul li#color {
+	padding-top: 3.5em;
+	list-style-image: url(img_css/album1_icon.png);
+	list-style-position: inside;
+}
+
+section.album ul li.none	
+	{list-style-image: none;
+	list-style-type: none;
+	font-family: 'Century Gothic';
+}
+
+section.album div{
+	margin-bottom: 4em;
+}
+
+section.album a {
+	border: 7px double #7d5c70;
+	border-radius: 5px;
+	color: white;
+	background-color: #7d5c70;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	float: right;
+	margin: 0em 1.5em;
+}
+
+section.album a:visited, section.album a:link {
+	text-decoration: none;
+}
+
+section.album a:hover, section.album a:active {
+	border: 9px double white;
+	border-radius: 5px;
+	color: #b9cece;
+	background-color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	float: right;
+	margin: 0em 1.5em;
+}
+
+/* Tour Styles */
+
+section#tour img {
+	width: 100%;
+	display: block;
+	box-shadow: rgb(51, 51, 51) -10px -3px 20px;
+}
+
+section#tour article {
+	margin: 0px auto 7em auto;
+	}
+
+section#tour figure {
+	border-width: 0px 170px 0px 170px;
+	border-style: solid;
+	border-image: url(img_css/la_frame.png) 82;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table caption {
+	caption-side: bottom;
+	text-align: right;
+	font-family: Impact, Charcoal, sans-serif;
+	letter-spacing: 0.2em;
+	color: #553f4c;
+	font-size: 2em;
+}
+
+table th {
+	border: 1px solid rgba(255,255,255, 0.1);
+	background: #6f5163;
+	color: white
+}
+
+tr:nth-of-type(even) {
+	background: #997189;
+	color: rgba(255,255,255, 0.9);
+}
+
+tr:nth-of-type(odd) {
+	background: rgba(255,255,255, 0.7);
+	color: #7d5c70;
+}
+
+table tr {
+	text-align: center;
+	height: 30px;
+}
+
+table a {
+	text-decoration: none;
+}
+
+table a:visited, table ul a:link {
+	text-decoration: none;
+}
+
+table a:hover, table ul a:active {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	background-color: #4aaebd;
+	display: block;
+}
+
+/* Subscribe Styles */
+
+h1 {
+	text-shadow: black 5px 0px 15px;
+	color: rgba(255,255,255, 0.99);
+	font-size: 1.7em;
+}
+
+form {
+   display: flex;
+   flex-flow: row wrap;
+} 
+
+fieldset {
+   flex: 1 1 300px; 
+   margin: 10px;  
+}
+
+div {
+   margin: 5px;
+   width: 100%;
+}
+
+legend {
+   color: white;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+
+label {
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 2.5em;
+	color: #6f5163;
+}
+
+fieldset.top label {
+   display: inline-block;
+   width: 120px;
+}
+
+select#socialMed {
+	width: 120px;
+}
+
+input:focus:invalid {
+	background-color: rgba(227,0,23, 0.5);
+}
+
+input:focus:valid {
+	background-color: rgba(79,167,142, 0.5);
+}
+
+input[type="submit"] {
+   height: 50px;
+   width: 20%;
+   float: right;
+   margin: 1.5em 0px;
+}
+
+section#form article {
+	margin: 3em auto 4em auto;
+} 
