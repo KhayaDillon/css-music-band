@@ -265,7 +265,7 @@ section.album ul li#color {
 	list-style-position: inside;
 }
 
-section.album ul li.none
+section.album ul li
 	{list-style-image: none;
 	list-style-type: none;
 	font-family: 'Century Gothic';
