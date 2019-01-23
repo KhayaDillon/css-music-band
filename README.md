@@ -6,3 +6,6 @@ My final project for my Intro to Web Development course at Bergen Community Coll
 ## Usage
 
 Clone repo and open the index.html in the browser, preferably Google Chrome. 
+
+
+![alt text](http://i65.tinypic.com/73cbdd.png)
