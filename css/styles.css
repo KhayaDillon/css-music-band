@@ -119,7 +119,7 @@ section.home > article {
 section.home figure {
 	border-width: 0px 170px 0px 170px;
 	border-style: solid;
-	border-image: url(imgs/la_frame.png) 82;
+	border-image: url(../imgs/la_frame.png) 82;
 }
 
 @keyframes slide {
@@ -255,13 +255,13 @@ section.album strong.title {
 
 section.album ul li#spark {
 	padding-top: 2em;
-	list-style-image: url(imgs/album2_icon.png);
+	list-style-image: url(../imgs/album2_icon.png);
 	list-style-position: inside;
 }
 
 section.album ul li#color {
 	padding-top: 3.5em;
-	list-style-image: url(imgs/album1_icon.png);
+	list-style-image: url(../imgs/album1_icon.png);
 	list-style-position: inside;
 }
 
@@ -318,7 +318,7 @@ section#tour article {
 section#tour figure {
 	border-width: 0px 170px 0px 170px;
 	border-style: solid;
-	border-image: url(imgs/la_frame.png) 82;
+	border-image: url(../imgs/la_frame.png) 82;
 }
 
 table {
