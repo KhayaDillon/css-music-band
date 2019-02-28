@@ -39,10 +39,24 @@
 }
 
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 591px) {
+  
+  nav.horizontal li {
+  	justify-content: center;
+  }
   
   nav > ul > li > a {
 	font-size: 2em;
-  }
+  }  
   
+}
+
+
+@media only screen and (max-width: 511px) {
+	
+  nav.horizontal ul {
+	flex-flow: column wrap;
+	border-width: 6px;
+  }
+
 }
