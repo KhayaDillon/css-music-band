@@ -63,7 +63,7 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
 	font-size: 2.7em;
 }
 
-section article {
+section .container {
 	background: rgba(255,255,255, 0.3);
 	box-shadow: #e35b4f 5px 2px 15px, rgb(51, 51, 51) 5px 0px 15px;
 	font-size: 0.9em;
@@ -107,17 +107,17 @@ footer::after {
 
 /* Homepage Styles */
 
-section.home img {
+section#index img {
 	width: 100%;
 	display: block;
 }
 
-section.home > article {
+section#index > .container {
 	margin: 0px auto 7em auto;
 	padding: 2em 3em;
 }
 
-section.home figure {
+section#index figure {
 	border-width: 0px 170px 0px 170px;
 	border-style: solid;
 	border-image: url(../imgs/la_frame.png) 82;
@@ -221,12 +221,12 @@ section.bio audio {
 	width: 50%;
 }
 
-section.bio article {
+section.bio .container {
 	flex: 3 1 300px;
 	margin: 0px auto 2em auto;
 }
 
-section#last article {
+section#last .container {
 	margin-bottom: 7em;
 }
 
@@ -242,7 +242,7 @@ section.album img {
 	box-shadow: rgb(51, 51, 51) 10px -10px 25px;
 }
 
-section.album article {
+section.album .container {
 	margin: 0px auto 7em auto;
 	columns: 150px 2;
 	column-rule: 1px solid #578e8e;
@@ -312,7 +312,7 @@ section#tour img {
 	box-shadow: rgb(51, 51, 51) -10px -3px 20px;
 }
 
-section#tour article {
+section#tour .container {
 	margin: 0px auto 7em auto;
 	}
 
@@ -433,6 +433,6 @@ input[type="submit"] {
    margin: 1.5em 0px;
 }
 
-section#form article {
+section#form .container {
 	margin: 3em auto 4em auto;
 }
