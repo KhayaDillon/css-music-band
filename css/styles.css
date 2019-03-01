@@ -98,10 +98,11 @@ footer dd {
 	line-height: 1.7em;
 }
 
-footer::after
-	{clear: both;
+footer::after {
+	clear: both;
 	content: "";
-	display: table;}
+	display: table;
+}
 
 
 /* Homepage Styles */
@@ -143,14 +144,14 @@ section.home figure {
 	100% {color: rgba(227,91,79, 0.01);}
 }
 
-div.fall {
+div.starShower {
 	float: left;
 	display: flex;
 	flex-flow: row wrap;
 	position: absolute;
 }
 
-div.star1 {
+div.firstFall {
 	width: 3%;
 	position: relative;
 	font-size: 1.6em;
@@ -161,7 +162,7 @@ div.star1 {
 	flex: 1 1 auto;
 }
 
-div.star2 {
+div.secondFall {
 	width: 10%;
 	position: relative;
 	font-size: 1.6em;
@@ -172,7 +173,7 @@ div.star2 {
 	flex: 1 1 auto;
 }
 
-div.star3 {
+div.thirdFall {
 	width: 3%;
 	position: relative;
 	font-size: 1.4em;

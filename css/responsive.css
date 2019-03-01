@@ -12,6 +12,14 @@
 
 /* Media Queries */
 
+@media only screen and (max-width: 1251) {
+  footer dl {
+	margin-right: 30px;
+  }
+  
+}
+
+
 @media only screen and (max-width: 841px) {
   
   section article {
