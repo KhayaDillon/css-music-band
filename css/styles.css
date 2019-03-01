@@ -28,7 +28,7 @@ header > img {
 	width: 100%;
 }
 
-nav.horizontal ul {
+nav ul {
 	display: flex;
 	flex-flow: row wrap;
 
@@ -37,7 +37,7 @@ nav.horizontal ul {
 	border-width: 4px;
 }
 
-nav.horizontal li {
+nav li {
 	display: flex;
 	flex-flow: row wrap;
 	flex: 1 1 auto;
