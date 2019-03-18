@@ -13,10 +13,9 @@
 /* Media Queries */
 
 @media only screen and (max-width: 1251px) {
-  footer dl {
-	margin-right: 30px;
+  div.footer {
+  	margin: 0em;
   }
-  
 }
 
 
@@ -24,6 +23,10 @@
   
   section .container {
 	box-shadow: #e35b4f 0px 2px 15px, rgb(51, 51, 51) 0px 0px 15px;
+  }
+  
+  footer {
+  	font-size: 0.75em;
   }
   
 }
@@ -42,6 +45,10 @@
   
   section#index figure {
 	border-width: 0px;
+  }
+  
+  dl {
+  	width: 100%;
   }
   
 }
